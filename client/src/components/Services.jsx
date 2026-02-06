@@ -3,20 +3,23 @@
 const services = [
   {
     title: "Web Development",
-    desc: "Astonished set expression solicitude way admiration",
-    active: true,
+    desc: "We build fast, responsive, and SEO-optimized websites that enhance user experience and help businesses grow their online presence.",
+    image: "/services/programming.png",
   },
   {
     title: "Application Development",
-    desc: "Astonished set expression solicitude way admiration",
+    desc: "Our team develops secure and scalable mobile and web applications tailored to your business goals and customer needs.",
+    image: "/services/app-development.png",
   },
   {
     title: "Digital Marketing",
-    desc: "Astonished set expression solicitude way admiration",
+    desc: "We deliver result-driven digital marketing strategies to increase brand visibility, generate quality leads, and boost online conversions.",
+    image: "/services/digital-asset.png",
   },
   {
     title: "UI/UX Design",
-    desc: "Astonished set expression solicitude way admiration",
+    desc: "We create intuitive and engaging user interfaces and experiences that enhance usability and drive customer satisfaction.",
+    image: "/services/ui-ux.png",
   },
 ];
 
@@ -36,21 +39,10 @@ export default function Services() {
             Your Business
           </h2>
 
-          <p className="text-lg text-gray-600 mb-10 max-w-lg">
-            Carried nothing on am warrant towards. Polite in of in oh needed
-            itself silent course. Assistance travelling so especially do
-            prosperous appearance.
+          <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
+            We deliver scalable, secure, and custom IT services designed to help businesses
+            innovate, grow faster, and stay competitive in the digital world.
           </p>
-
-          {/* Video Button */}
-          <div className="flex items-center gap-4 cursor-pointer">
-            <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl shadow-lg">
-              ▶
-            </div>
-            <span className="font-semibold text-gray-800">
-              VIDEO SHOWCASE
-            </span>
-          </div>
         </div>
 
         {/* RIGHT CARDS */}
@@ -58,38 +50,33 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`p-10 rounded-xl shadow-sm text-center transition
-                ${
-                  service.active
-                    ? "bg-blue-600 text-white"
-                    : "bg-white"
-                }`}
+              className="group p-10 rounded-xl bg-white text-center cursor-pointer
+                         transition-all duration-300 ease-out
+                         hover:-translate-y-3 hover:scale-[1.02]
+                         hover:shadow-xl hover:bg-blue-50"
             >
-              {/* Icon Placeholder */}
-              <div
-                className={`mx-auto mb-6 w-16 h-16 rounded-full flex items-center justify-center
-                ${
-                  service.active
-                    ? "bg-white/20"
-                    : "bg-blue-100 text-blue-600"
-                }`}
-              >
-                ⚙
+              {/* Image */}
+              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-blue-100
+                              flex items-center justify-center
+                              transition-all duration-300 group-hover:scale-110">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-9 h-9 object-contain"
+                />
               </div>
 
-              <h3
-                className={`text-xl font-semibold mb-3 ${
-                  service.active ? "text-white" : "text-black"
-                }`}
-              >
+              {/* Title */}
+              <h3 className="text-xl font-semibold mb-3 text-black
+                             transition-colors duration-300
+                             group-hover:text-blue-600">
                 {service.title}
               </h3>
 
-              <p
-                className={`text-sm leading-relaxed ${
-                  service.active ? "text-white/80" : "text-gray-600"
-                }`}
-              >
+              {/* Description */}
+              <p className="text-sm leading-relaxed text-gray-600
+                            transition-opacity duration-300
+                            group-hover:opacity-90">
                 {service.desc}
               </p>
             </div>

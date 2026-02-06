@@ -33,7 +33,7 @@ export default function Footer() {
             <li>News & Media</li>
             <li>Case Studies</li>
             <li>Contact Us</li>
-            <li>Investors</li>
+            {/* <li>Investors</li> */}
           </ul>
         </div>
 
@@ -43,12 +43,11 @@ export default function Footer() {
             Solutions
           </h3>
           <ul className="space-y-2 text-sm">
-            <li>IT Management</li>
-            <li>Cyber Security</li>
-            <li>Cloud Computing</li>
-            <li>IT Consulting</li>
+            <li>Web Development</li>
+            <li>Application Development</li>
+            <li>Digital Marketing</li>
+            <li>UI/UX Design</li>
             <li>Software Development</li>
-            <li>Backup & Recovery</li>
           </ul>
         </div>
 
@@ -59,31 +58,53 @@ export default function Footer() {
           </h3>
           <p className="text-sm mb-3">
             <strong>Address:</strong><br />
-            5919 Trussville Crossings Pkwy, Birmingham AL 35235
+            Kolkata,West Bengal,700010, India
           </p>
           <p className="text-sm mb-6">
             <strong>Email:</strong><br />
-            info@validtheme.com
+            hiicodecraft@gmail.com
           </p>
 
           <h4 className="text-white font-semibold mb-3">
-            Download
+            Connect with us
           </h4>
           <div className="flex gap-3">
-            <span className="bg-white text-black px-3 py-2 rounded text-sm">
-               App Store
-            </span>
-            <span className="bg-white text-black px-3 py-2 rounded text-sm">
-              ▶ Google Play
-            </span>
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-blue-600
+               hover:bg-blue-600 hover:text-white transition"
+              aria-label="LinkedIn"
+            >
+              in
+            </a>
+
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-blue-700
+               hover:bg-blue-700 hover:text-white transition"
+              aria-label="Facebook"
+            >
+              f
+            </a>
+
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-sky-500
+               hover:bg-sky-500 hover:text-white transition"
+              aria-label="Twitter"
+            >
+              x
+            </a>
           </div>
+
+
         </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 py-4 text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
-          <p>© 2025. Designed by validthemes</p>
+          <p>Copyright © 2026 CodeCraft. All rights reserved.</p>
           <div className="flex gap-4">
             <span>Terms</span>
             <span>Privacy</span>

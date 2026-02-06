@@ -1,18 +1,18 @@
 const teamMembers = [
   {
-    name: "Sporia Deko",
-    role: "Marketing",
-    image: "/team/team1.jpg",
+    name: "Satyajit Manna",
+    role: "Software Engineer",
+    image: "/team/satyajit_images.jpeg",
   },
   {
-    name: "Adhom Jonam",
+    name: "Dibyendu Das",
     role: "Project Manager",
-    image: "/team/team2.jpg",
+    image: "/team/dibyendu_das.jpg",
   },
   {
-    name: "Turka Pruda",
-    role: "CEO, Co-Founder",
-    image: "/team/team3.jpg",
+    name: "Ankan Kumar Nanda",
+    role: "CEO, Founder",
+    image: "/team/Ankan_kumar_nanda.jpg",
   },
 ];
 
@@ -48,11 +48,11 @@ export default function Team() {
                 />
 
                 {/* Hover Icon */}
-                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition">
+                {/* <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition">
                   <div className="w-10 h-10 bg-blue-600 text-white flex items-center justify-center rounded-full text-xl">
                     +
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Name & Role */}

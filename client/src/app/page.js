@@ -22,10 +22,10 @@ export default function Home() {
       <TrustedCustomers />
       <WhatWeDo />
       <ServiceCTA />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <Team />
       <FAQ />
-      <Blog />
+      {/* <Blog /> */}
       
     </>
   );

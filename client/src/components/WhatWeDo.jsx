@@ -3,15 +3,18 @@
 const services = [
   {
     title: "Risk Management",
-    desc: "Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods on an.",
+    desc: "Helping your business stay secure, compliant, and prepared for potential risks.",
+    image: "/whatWeDo/risk.png",
   },
   {
     title: "Business Planning",
-    desc: "Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods on an.",
+    desc: "Smart planning strategies to guide business growth and success.",
+    image: "/whatWeDo/planning.png",
   },
   {
     title: "Infrastructure Plan",
-    desc: "Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods on an.",
+    desc: "Smart infrastructure planning for scalable and reliable IT systems.",
+    image: "/whatWeDo/infrastructure.png",
   },
 ];
 
@@ -37,8 +40,12 @@ export default function WhatWeDo() {
                          transition-all duration-300 hover:-translate-y-3"
             >
               {/* Icon placeholder */}
-              <div className="mb-6 text-blue-600 text-4xl">
-                📊
+              <div className="mb-6 flex justify-center">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
 
               <h3 className="text-xl font-semibold text-neutral-900 mb-4">

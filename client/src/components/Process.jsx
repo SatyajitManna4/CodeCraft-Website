@@ -4,26 +4,26 @@ const steps = [
     {
         step: "01",
         title: "Choose a Service",
-        desc: "Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better.",
-        icon: "👥",
+        desc: "Get started by choosing the service that suits your business.",
+        image: "/process/service-provider.png",
     },
     {
         step: "02",
         title: "Request a Meeting",
-        desc: "Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better.",
-        icon: "📹",
+        desc: "Schedule a meeting with our team to discuss your requirements.",
+        image: "/process/meeting.png",
     },
     {
         step: "03",
         title: "Receive Custom Plan",
-        desc: "Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better.",
-        icon: "📊",
+        desc: "We'll create a custom plan tailored to your specific needs.",
+        image: "/process/plan.png",
     },
     {
         step: "04",
         title: "Let’s Make it Happen",
-        desc: "Arose mr rapid in so vexed words. Gay welcome led add lasting chiefly say looking better.",
-        icon: "⚙️",
+        desc: "Executing the strategy with precision, quality, and accountability.",
+        image: "/process/happend.png",
     },
 ];
 
@@ -54,33 +54,34 @@ export default function Process() {
                         >
                             {/* Background Step Number */}
                             <span
-                                className="absolute top-6 right-6 text-6xl font-extrabold text-gray-100
-               transition-all duration-300
-               group-hover:text-blue-100"
+                                className="absolute top-6 right-6 text-7xl font-extrabold
+             text-gray-200 z-0
+             transition-all duration-300
+             group-hover:text-blue-100"
                             >
                                 {item.step}
                             </span>
 
+
                             {/* Icon */}
-                            <div
-                                className="text-blue-600 text-4xl mb-6
-               transition-transform duration-300
-               group-hover:scale-110"
-                            >
-                                {item.icon}
+                            <div className="relative z-10 mb-6 transition-transform duration-300 group-hover:scale-110">
+
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="w-16 h-16 object-contain"
+                                />
                             </div>
 
                             {/* Title */}
-                            <h3
-                                className="text-xl font-semibold text-neutral-900 mb-4
-               transition-colors duration-300
-               group-hover:text-blue-600"
-                            >
+                            <h3 className="relative z-10 text-xl font-semibold text-neutral-900 mb-4 transition-colors duration-300 group-hover:text-blue-600">
+
                                 {item.title}
                             </h3>
 
                             {/* Description */}
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="relative z-10 text-gray-600 text-sm leading-relaxed">
+
                                 {item.desc}
                             </p>
                         </div>

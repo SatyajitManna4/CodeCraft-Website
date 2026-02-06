@@ -12,7 +12,7 @@ export default function TrustedCustomers() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
-            Trusted by 5,000+ <br />
+            Trusted by Many <br />
             Happy Customers
           </h2>
 
@@ -29,7 +29,7 @@ export default function TrustedCustomers() {
                 ✓
               </span>
               <p className="font-semibold text-neutral-900">
-                100% Client Satisfaction
+                99.99% Client Satisfaction
               </p>
             </div>
 
@@ -52,7 +52,7 @@ export default function TrustedCustomers() {
         {/* RIGHT IMAGE + STATS */}
         <div className="relative">
           <img
-            src="/team-work.jpg"
+            src="/team-work.png"
             alt="Team work"
             className="rounded-xl shadow-lg w-full"
           />
@@ -60,7 +60,7 @@ export default function TrustedCustomers() {
           {/* Floating Stats Card */}
           <div className="absolute -bottom-10 -left-10 bg-white shadow-xl rounded-xl px-10 py-8">
             <h3 className="text-5xl font-extrabold text-blue-600">
-              875<span className="text-3xl align-top">+</span>
+              10<span className="text-3xl align-top">+</span>
             </h3>
             <p className="text-gray-700 font-semibold mt-2">
               Completed Projects
