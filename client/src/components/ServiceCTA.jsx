@@ -9,7 +9,7 @@ export default function ServiceCTA() {
                      justify-between gap-10 text-white"
           style={{
             background:
-              "linear-gradient(90deg, rgba(37,99,235,0.95), rgba(30,64,175,0.95)), url('/cta-bg.jpg')",
+              "linear-gradient(90deg, rgba(32, 51, 91, 0.95), rgba(108, 117, 145, 0.95)), url('/cta-bg.jpg')",
             backgroundSize: "cover",
           }}
         >

@@ -7,18 +7,33 @@ export default function Header() {
       <div className="bg-[#681ACF] text-white text-sm">
         <div className="max-w-7xl mx-auto px-6 py-2 flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex gap-4">
-            <span>📍 Kolkata, West Bengal</span>
-            <span>✉ hiicodecraft@gmail.com</span>
+            <div className="flex items-center gap-2">
+              <img src="/header/location.png" alt="Location" className="w-4 h-4" />
+              <span>Kolkata, West Bengal</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <img src="/header/mail.png" alt="Email" className="w-4 h-4" />
+              <span>hiicodecraft@gmail.com</span>
+            </div>
+
           </div>
           <div className="flex gap-4 items-center">
-            <span>⏰ Office Hours: 8:00 AM – 7:45 PM</span>
-            <span>🌐</span>
+            <div className="flex items-center gap-2">
+              <img src="/header/clock.png" alt="Office Hours" className="w-4 h-4" />
+              <span>Office Hours: 8:00 AM – 7:45 PM</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <img src="/header/internet.png" alt="Language" className="w-4 h-4" />
+            </div>
+
           </div>
         </div>
       </div>
 
       {/* Main Header */}
-      <header className="bg-white shadow">
+      <header className="bg-white shadow sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
           {/* Logo */}
@@ -26,7 +41,7 @@ export default function Header() {
             <img
               src="/codeCraft.png"
               alt="codeCraft Logo"
-              className="h-15 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
