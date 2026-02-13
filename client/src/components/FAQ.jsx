@@ -68,9 +68,7 @@ export default function FAQ() {
                 </div>
 
                 <span
-                  className={`transition-transform duration-300 ${
-                    activeIndex === index ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform duration-300 ${activeIndex === index ? "rotate-180" : ""}`}
                 >
                   ⌄
                 </span>
@@ -78,9 +76,7 @@ export default function FAQ() {
 
               {/* Answer */}
               <div
-                className={`overflow-hidden transition-all duration-500 ${
-                  activeIndex === index ? "max-h-40 px-6 pb-5" : "max-h-0"
-                }`}
+                className={`overflow-hidden transition-all duration-500 ${activeIndex === index ? "max-h-40 px-6 pb-5" : "max-h-0"}`}
               >
                 <p className="text-gray-600 text-sm leading-relaxed">
                   {faq.answer}
