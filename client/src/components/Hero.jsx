@@ -17,11 +17,11 @@ export default function Hero() {
     
 
   <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-lg">
-    Affixed pretend account ten natural. Need eat week even yet that.
-    Incommode delighted he resolving sportsmen do in listening.
+    We deliver innovative, secure, and scalable technology solutions
+   designed to accelerate business growth and digital transformation.
   </p>
 
-  <button className="bg-blue-600 text-white text-lg px-8 py-4 rounded-md hover:bg-blue-700 transition">
+          <button className="bg-blue-600 text-white text-lg px-8 py-4 rounded-md hover:bg-blue-700 transition active:scale-95">
     Start Now →
   </button>
 </div>

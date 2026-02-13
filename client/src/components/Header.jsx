@@ -126,7 +126,7 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" onClick={closeMenu}>
-            <Image src="/codecraft_final.jpeg" alt="CodeCraft Logo" width={64} height={64} />
+            <Image src="/CodeCraft.png" alt="CodeCraft Logo" width={48} height={48} priority />
           </Link>
 
           {/* Desktop Navigation */}
@@ -177,7 +177,7 @@ export default function Header() {
         >
           {/* Drawer Header */}
           <div className="flex justify-between items-center p-5 border-b">
-            <Image src="/codeCraft.png" alt="Logo" width={40} height={40} />
+            <Image src="/CodeCraft.png" alt="Logo" width={36} height={36} priority />
             <button onClick={closeMenu} className="text-2xl">✕</button>
           </div>
 

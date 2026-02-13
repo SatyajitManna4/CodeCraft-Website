@@ -72,7 +72,7 @@ export default function WhatWeDo() {
 
             <div
               key={index}
-              className="group bg-white rounded-xl p-10 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-3"
+              className="group bg-white rounded-xl p-10 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-3 active:scale-95 active:shadow-lg"
             >
 
               {/* Icon placeholder */}
@@ -85,7 +85,7 @@ export default function WhatWeDo() {
 
                   alt={item.title}
 
-                  className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110"
+                  className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110 group-active:scale-95"
 
                 />
 
@@ -111,7 +111,7 @@ export default function WhatWeDo() {
 
               {/* Arrow Button */}
 
-              <div className="w-10 h-10 mx-auto rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition">
+              <div className="w-10 h-10 mx-auto rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition group-active:scale-95">
 
                 →
 

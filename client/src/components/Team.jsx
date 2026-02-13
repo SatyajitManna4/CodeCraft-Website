@@ -44,7 +44,7 @@ export default function Team() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-[380px] object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-[380px] object-cover transition-transform duration-500 group-hover:scale-110 group-active:scale-95"
                 />
 
                 {/* Hover Icon */}

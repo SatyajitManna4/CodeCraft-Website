@@ -100,14 +100,14 @@ export default function Services() {
 
             <div
               key={index}
-              className="group p-10 rounded-xl text-center cursor-pointer bg-white transition-all duration-300 ease-out hover:-translate-y-3 hover:scale-[1.02] hover:shadow-xl"
+              className="group p-10 rounded-xl text-center cursor-pointer bg-white transition-all duration-300 ease-out hover:-translate-y-3 hover:scale-[1.02] hover:shadow-xl active:scale-95 active:shadow-lg"
             >
 
 
 
               {/* Image */}
 
-              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-active:scale-95">
 
                 <img
 

@@ -96,7 +96,7 @@ export default function Process() {
 
                         <div
                             key={index}
-                            className="group relative bg-white border border-gray-200 p-10 text-center rounded-lg cursor-pointer transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-xl hover:border-blue-500"
+                            className="group relative bg-white border border-gray-200 p-10 text-center rounded-lg cursor-pointer transition-all duration-300 ease-out hover:-translate-y-3 hover:shadow-xl hover:border-blue-500 active:scale-95 active:shadow-lg"
                         >
 
                             {/* Background Step Number */}
@@ -115,7 +115,7 @@ export default function Process() {
 
                             {/* Icon */}
 
-                            <div className="relative z-10 mb-6 transition-transform duration-300 group-hover:scale-110">
+                            <div className="relative z-10 mb-6 transition-transform duration-300 group-hover:scale-110 group-active:scale-95">
 
 
 
